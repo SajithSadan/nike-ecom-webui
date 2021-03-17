@@ -1,0 +1,25 @@
+{
+  "name": "nike-ecom-ui",
+  "version": "1.0.0",
+  "description": "An ecommerce application demo using react js and css animations",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SajithSadan/nike-ecom-webui.git"
+  },
+  "keywords": [
+    "react",
+    "js",
+    "ecommerce",
+    "animations"
+  ],
+  "author": "Sajith Sadanandan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SajithSadan/nike-ecom-webui/issues"
+  },
+  "homepage": "https://github.com/SajithSadan/nike-ecom-webui#readme"
+}
