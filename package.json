@@ -1,10 +1,11 @@
 {
   "name": "nike-ecom-ui",
   "version": "1.0.0",
-  "description": "An ecommerce application demo using react js and css animations",
+  "description": "An e-commerce application demo using react js and css animations",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "parcel index.html --open",
+    "build": "parcel build index.html"
   },
   "repository": {
     "type": "git",
@@ -21,5 +22,12 @@
   "bugs": {
     "url": "https://github.com/SajithSadan/nike-ecom-webui/issues"
   },
-  "homepage": "https://github.com/SajithSadan/nike-ecom-webui#readme"
+  "homepage": "https://github.com/SajithSadan/nike-ecom-webui#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  },
+  "dependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
 }
