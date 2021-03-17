@@ -5,3 +5,5 @@ This is a demo to show modern e-commerce application ui, created using **react j
 ---
 
 Inspired from dribble [Parallax Swipe Mobile UI - E Commerce](https://dribbble.com/shots/13819426-Parallax-Swipe-Mobile-UI-E-Commerce)
+
+![Visual Design](https://cdn.dribbble.com/users/793057/screenshots/13819426/media/8500fe3327263c526ced143db9177c57.mp4)
