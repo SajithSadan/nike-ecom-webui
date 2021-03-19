@@ -44,7 +44,7 @@ const shoes = [
     category: "Trail-Laufschuh für Herren",
     description:
       "Lauf den Trail im Nike Air Zoom Terra Kiger 7. Schnell und leicht, liefert der Schuh ein atmungsaktives und sicheres Gefühl, während du über felsige Pfade rennst. Aktualisierte Traktionsstollen sorgen für Stabilität beim Abwärtslaufen.",
-    bgColor: "#ff38b2",
+    bgColor: "#2c6b92",
     textColor: "#ffffff",
   },
   {

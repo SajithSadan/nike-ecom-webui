@@ -1,11 +1,12 @@
 import React from "react";
 
 const Product = (props) => {
-  const { product, width } = props;
+  const { product, width, active, index } = props;
+
   return (
     <div className="productWrapper" style={{ width: width }}>
       <div
-        className="product"
+        className={index === active ? `product active` : `product`}
         style={{
           backgroundColor: `${product.bgColor}`,
           color: `${product.textColor}`,
