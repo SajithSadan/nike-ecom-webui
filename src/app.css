@@ -14,10 +14,11 @@ body {
 }
 .listWrapper {
   width: 100wv;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 .productList {
   display: flex;
+  transition: transform 1s ease;
 }
 .product {
   width: 80%;
