@@ -48,23 +48,25 @@ const Products = ({ products }) => {
   }, [width]);
 
   const onSwipeLeft = (event) => {
-    if (selected) {
+    if (selected !== null) {
       return false;
+    } else {
+      const newActive = active < products.length - 1 ? active + 1 : active;
+      const newXPos = newActive === active ? xPos : xPos - width;
+      setXPos(newXPos);
+      setActive(newActive);
     }
-    const newActive = active < products.length - 1 ? active + 1 : active;
-    const newXPos = newActive === active ? xPos : xPos - width;
-    setXPos(newXPos);
-    setActive(newActive);
   };
 
   const onSwipeRight = (event) => {
-    if (selected) {
+    if (selected !== null) {
       return false;
+    } else {
+      const newActive = active > 0 ? active - 1 : active;
+      const newXPos = newActive === active ? xPos : xPos + width;
+      setXPos(newXPos);
+      setActive(newActive);
     }
-    const newActive = active > 0 ? active - 1 : active;
-    const newXPos = newActive === active ? xPos : xPos + width;
-    setXPos(newXPos);
-    setActive(newActive);
   };
 
   const handleSelected = (index) => {

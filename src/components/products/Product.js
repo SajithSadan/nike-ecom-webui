@@ -1,6 +1,8 @@
 import React from "react";
 import classnames from "classnames";
 import { HiX } from "react-icons/hi";
+import Size from "./Size";
+import AddToCart from "./AddToCart";
 
 const Product = (props) => {
   const { product, width, active, index, selected, handleSelected } = props;
@@ -51,6 +53,8 @@ const Product = (props) => {
           <span className="prdPrice">{product.price}</span>
         </div>
         <p className="prdDesc">{product.description}</p>
+        <Size />
+        <AddToCart />
       </div>
     </div>
   );

@@ -5,7 +5,11 @@ const TopBar = () => {
   return (
     <div className="topBar">
       <span className="backBtn">
-        <HiArrowNarrowLeft />
+        <img
+          src="https://sajithsadanandan.com/demos/nike-images/Logo_NIKE.svg"
+          alt="Nike Logo"
+          style={{ height: "30px" }}
+        />
       </span>
       <span className="searchBtn">
         <HiSearch />

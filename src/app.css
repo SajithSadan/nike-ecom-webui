@@ -13,10 +13,15 @@ body {
 }
 .listWrapper {
   width: 100vw;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: visible;
   padding-left: 15px;
   position: relative;
   transition: all 1s ease;
+  /* height: 100vh; */
+}
+.listWrapper::-webkit-scrollbar {
+  display: none;
 }
 .listWrapper.detailPage {
   transform: translate(0px, -215px);
@@ -37,7 +42,7 @@ body {
 .product .productBg {
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 95%;
   top: 0;
   left: 0;
   border-radius: 30px;
@@ -46,7 +51,7 @@ body {
 }
 .product.selected .productBg {
   border-radius: 100%;
-  transform: scale(1.8) translate(31px, -110px);
+  transform: scale(1.8) translate(31px, -100px);
   width: 356px;
 }
 .detailPage .productDetails {
@@ -216,8 +221,54 @@ span.prdPrice {
   font-weight: 400;
   margin-top: 1.5em;
 }
+.sizeChart {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+.sizeChart h2 {
+  font-size: 1.2em;
+}
+span.sizeChip {
+  background: #fff;
+  border: 2px solid #dddddd;
+  padding: 5px 10px;
+  display: inline-block;
+  margin: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+span.sizeChip:hover {
+  border: 2px solid #000;
+}
+.sizeChipWrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1em;
+  flex-flow: wrap;
+}
+span.sizeChip.selectedSize {
+  background: #2d2d2d;
+  color: #fff;
+  border-color: black;
+}
+.addToCartBtn {
+  background-color: #1e2532;
+  color: #fff;
+  width: 100%;
+  padding: 15px;
+  text-align: center;
+  border: 2px solid #1e2532;
+  border-radius: 15px;
+  font-size: 1.2em;
+  font-weight: 600;
+}
 /* ------------ Media query ----------- */
 @media only screen and (min-width: 600px) {
+  .addToCartBtn {
+    max-width: 360px;
+    font-size: 1.1em;
+  }
   .detailPage .productWrapper.selected {
     width: 100vw !important;
     display: flex;
@@ -228,6 +279,7 @@ span.prdPrice {
   }
   .listWrapper.detailPage {
     transform: translate(0px, -175px);
+    width: 100%;
   }
   .product.selected .productBg {
     transform: scale(1.8) translate(0px, -80px);
@@ -250,5 +302,14 @@ span.prdPrice {
   }
   span.closeBtn {
     top: 20px;
+  }
+  span.sizeChip {
+    margin: 5px;
+  }
+  span.sizeChip:first-child {
+    margin-left: 0;
+  }
+  .prdTitle .prdName {
+    font-size: 1.8em;
   }
 }

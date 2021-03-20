@@ -8,7 +8,7 @@ const shoes = [
     category: "Basketballschuh",
     description:
       'Die besten Athleten hinterlassen ein Vermächtnis, aber nicht nur Erfolge und Auszeichnungen, Punkte und gewonnene Titel. Mehr als je zuvor ging es darum, das Spiel besser zu verlassen als vorher, um für die nächsten Generationen eine nachhaltigere Zukunft zu schaffen. Der Kyrie 7 "Play for the Future" wurde von Kyries globalem Bekenntnis zu einem nachhaltigen Leben inspiriert und erinnert an seine eigene pflanzliche Ernährung. Es besticht durch Grafiken im Obermaterial, die von Pflanzen inspiriert wurden, und ein gekeimtes "KI"-Logo auf der Ferse.',
-    bgColor: "#334ad6",
+    bgColor: "#4a7ff3",
     textColor: "#ffffff",
   },
   {
